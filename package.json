@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "ai-todo-app",
   "version": "1.0.0",
   "description": "",
@@ -6,7 +7,8 @@
   "scripts": {
     "generate": "drizzle-kit generate",
     "migrate": "drizzle-kit migrate",
-    "studio": "drizzle-kit studio"
+    "studio": "drizzle-kit studio",
+    "start": "node ./src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +20,7 @@
     "tsx": "^4.19.2"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.21.0",
     "dotenv": "^16.4.7",
     "drizzle-orm": "^0.39.0",
     "openai": "^4.80.1",
