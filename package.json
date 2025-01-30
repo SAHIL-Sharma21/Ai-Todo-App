@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "generate": "drizzle-kit generate",
-    "migrate": "drizzle-kit migrate",
+    "migrate": "node -r dotenv/config ./src/db/migration.js",
     "studio": "drizzle-kit studio",
     "start": "node ./src/index.js"
   },
@@ -20,6 +20,7 @@
     "tsx": "^4.19.2"
   },
   "dependencies": {
+    "@electric-sql/pglite": "^0.2.16",
     "@google/generative-ai": "^0.21.0",
     "dotenv": "^16.4.7",
     "drizzle-orm": "^0.39.0",
