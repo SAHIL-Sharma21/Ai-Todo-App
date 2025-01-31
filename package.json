@@ -3,6 +3,9 @@
   "name": "ai-todo-app",
   "version": "1.0.0",
   "description": "",
+  "bin": {
+    "ai-todo": "./src/index.js"
+  },
   "main": "index.js",
   "scripts": {
     "generate": "drizzle-kit generate",

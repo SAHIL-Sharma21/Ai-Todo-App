@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 //Tools for our TODO app
 import readlineSync from 'readline-sync';
 import { model } from "./ai-services/gemini.js";
