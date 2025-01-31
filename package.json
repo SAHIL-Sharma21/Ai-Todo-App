@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "bin": {
-    "ai-todo": "./src/index.js"
+    "my AI app": "./src/index.js"
   },
   "main": "index.js",
   "scripts": {
