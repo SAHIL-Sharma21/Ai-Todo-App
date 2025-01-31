@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "ai-todo-app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "bin": {
     "ai-todo-app": "./src/index.js"
@@ -13,7 +13,12 @@
     "studio": "drizzle-kit studio",
     "start": "node ./src/index.js"
   },
-  "keywords": ["todo", "ai", "gemini", "cli"],
+  "keywords": [
+    "todo",
+    "ai",
+    "gemini",
+    "cli"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
