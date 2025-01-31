@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "ai-todo-app",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "bin": {
     "ai-todo-app": "./src/index.js"
