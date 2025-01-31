@@ -19,6 +19,14 @@
     "gemini",
     "cli"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAHIL-Sharma21/Ai-Todo-App"
+  },
+  "bugs": {
+    "url": "https://github.com/SAHIL-Sharma21/Ai-Todo-App/issues"
+  },
+  "homepage": "https://github.com/SAHIL-Sharma21/Ai-Todo-App#readme",
   "author": "",
   "license": "ISC",
   "devDependencies": {
