@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@electric-sql/pglite':
+        specifier: ^0.2.16
+        version: 0.2.16
       '@google/generative-ai':
         specifier: ^0.21.0
         version: 0.21.0
@@ -16,7 +19,7 @@ importers:
         version: 16.4.7
       drizzle-orm:
         specifier: ^0.39.0
-        version: 0.39.0(@types/pg@8.11.11)(pg@8.13.1)
+        version: 0.39.0(@electric-sql/pglite@0.2.16)(@types/pg@8.11.11)(pg@8.13.1)
       openai:
         specifier: ^4.80.1
         version: 4.80.1
@@ -44,6 +47,9 @@ packages:
 
   '@drizzle-team/brocli@0.10.2':
     resolution: {integrity: sha512-z33Il7l5dKjUgGULTqBsQBQwckHh5AbIuxhdsIxDDiZAzBOrZO6q9ogcWC65kU382AfynTfgNumVcNIjuIua6w==}
+
+  '@electric-sql/pglite@0.2.16':
+    resolution: {integrity: sha512-dCSHpoOKuTxecaYhWDRp2yFTN3XWcMPMrBVl5yOR8VZEUprz4+R3iuU7BipmlsqBnBDO/6l9H/C2ZwJdunkWyw==}
 
   '@esbuild-kit/core-utils@3.3.2':
     resolution: {integrity: sha512-sPRAnw9CdSsRmEtnsl2WXWdyquogVpB3yZ3dgwJfe8zrOzTsV7cJvmwrKVa+0ma5BoiGJ+BoqkMvawbayKUsqQ==}
@@ -826,6 +832,8 @@ snapshots:
 
   '@drizzle-team/brocli@0.10.2': {}
 
+  '@electric-sql/pglite@0.2.16': {}
+
   '@esbuild-kit/core-utils@3.3.2':
     dependencies:
       esbuild: 0.18.20
@@ -1097,8 +1105,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.39.0(@types/pg@8.11.11)(pg@8.13.1):
+  drizzle-orm@0.39.0(@electric-sql/pglite@0.2.16)(@types/pg@8.11.11)(pg@8.13.1):
     optionalDependencies:
+      '@electric-sql/pglite': 0.2.16
       '@types/pg': 8.11.11
       pg: 8.13.1
 
