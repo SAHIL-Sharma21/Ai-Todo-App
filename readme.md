@@ -15,6 +15,67 @@ A smart command-line TODO list manager powered by Google Gemini AI, featuring na
 - 🔄 **Conversational Workflow** - PLAN → ACTION → OBSERVATION pattern
 - 🛠 **Type Safe** - Built with modern Javascript practices
 
+
+## Get Started 🚀
+
+A CLI todo application powered by Google's Gemini AI and PostgreSQL.
+
+To use App follow the below steps:
+1. **Create a new directory and navigate to it**:
+```bash
+mkdir my-todo-app
+cd my-todo-app
+```
+2. **Create a `.env` file**:
+```bash
+echo "GOOGLE_API_KEY=your-gemini-api-key-here" > .env
+echo "DATABASE_URL=your-postgresql-url-here" >> .env
+
+```
+3. **Install and run the packages**:
+```bash
+npm i ai-todo-app
+npx ai-todo-app
+
+or 
+
+#you can install package globally
+npm i -g ai-todo-app
+ai-todo-app
+```
+Or run it directly with environment variables:
+```bash
+GOOGLE_API_KEY=your-gemini-api-key-here DATABASE_URL=your-postgresql-url-here npx ai-todo-app
+```
+
+### Getting the Required Keys
+
+1. **Gemini API Key**: Get your key from [Google AI Studio](https://makersuite.google.com/app/apikey)
+
+2. **PostgreSQL Database URL**: You can either:
+   - Use a local PostgreSQL installation: `postgresql://username:password@localhost:5432/database_name`
+   - Use a cloud service like Supabase, Railway, or Render
+   - Format: `postgresql://username:password@host:port/database_name`
+
+
+## CLI Output will look like this:
+```bash
+>> hey who are you?
+🤖: Hello! I am your Personal TODO Handler.  How can I help you today?
+>> can you tell me any todo left for me to do?
+🤖: Currently, there are no tasks in your to-do list.
+>> can you add one task as i have to debug the code for AI.
+🤖: The task "debug the code for AI" has been added to your to-do list.
+>> can i see the list of all my tasks
+🤖: Your to-do list:
+
+- debug the code for AI
+>> ohk thank you!
+🤖: You're welcome! Is there anything else I can assist you with?
+```
+
+Now you can start interacting with the AI-powered TODO app!
+
 ## Tech Stack 🛠️
 
 | Component               | Technology                          |
